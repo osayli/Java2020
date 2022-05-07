@@ -1,0 +1,88 @@
+/*
+1)Interface looks like a class but it is not a class.
+2)An interface can have just abstract methods.
+3) Variables declared in an interface are public, static , and final.
+ Marking a variable as  private or protected will trigger a compiler error
+ 4)You have to initialize the variable when you declare, otherwise you get Compile Time Error
+ 5)Concrete class that implements interface must implement all the methods of the interface.
+ 6)Java programming language does not allow you to extend more than one class,
+However, you can implement more than one interfaces in your class.
+
+ */
+
+/*
+1: You cannot create an object from an Interface.
+ A) It is abstract
+ B) It is not completed, because there are abstract methods inside it
+2: All methods must be abstract inside the interface.
+However, abstract classes can have both abstract and concrete methods
+Note: Abstract class that implements interface may not implement all the methods of the interface.
+3: Use “implements” keyword by classes to implement an interface, not extends.
+ But use “extends” keyword by interfaces to implement an interface.
+4: A class can implement any number of interfaces.
+5: If there are two or more same methods in two interfaces and a class implements all
+interfaces, implementation of the method once is enough
+6: A class cannot implement more than one interfaces that have methods with same name but different return type.
+Variable names conflicts can be resolved by interface name.
+7)f you need a ‘method with body’ (Concrete Method) in an interface,
+you must use “default” or “static” keyword explicitly
+8)An interface can have public or default access; however, cannot be declared as private, protected
+ */
+  note:by default methods are abstract and public
+
+  /* Mr. Settar notes
+
+  Java Abstraction
+  	abstract class
+  	encapsulation
+  	Inheritance
+  	abstraction
+  	polymorphism
+  	Animal animal = new Cat();
+  	How much would you rate yourself out of 10 in Java?
+  	5-6-78
+  	I know Core Java
+  	String manipulations
+  	Data structures(Collections and Maps)
+  	OOP Concept
+  	execptions
+  	public class Car extends Engine, AirCondition
+  	public  Interface  Animal{
+  		public int eat();
+  	}
+  	public Interface Mammal(){
+  		public int eat();
+  	}
+  	public class Cat  implements Animal,Mammal (){
+  		//this return String
+  		public int eat(   ){}; //Override, it will return int
+  		Signature: order of parameters
+  				   number of parameters
+  				   type of parameters
+  	}
+ 	Interface uses abstract key work for Interface name
+ 	No need for abstract key work
+ 	Interface can have constructor
+ 	No and no need to try to initialize variables as they are final
+ 	Abstract class needs abstract key word
+ 	yes
+ 	Abstract class can have concrete and abstract methods
+ 	yes
+ 	Abstract class can have constructors
+ 	abstract class can have final, static, private variables
+ 	yes
+ 	Interface can have final, static, public variables
+ 	yes
+ 	Interface can have default, private protected variables
+ 	no
+ 	Interface can have concrete methods other than default and static
+ 	Interface and abstract class cannot create objects
+ 	yes
+ 	Difference between an Interface and abstract class?
+ 	Interface cannot have any constructor, but abstract class can have constructors
+ 	Interface can be implemented many times(multiple inheritance) , but Abstract classs cannot have multiple Inheritance.
+ 	Interface is fullly abstraction and cannot use all concrete methods, but Abstract has  asbtract methods and concrete methods
+ 	difference between an Abstract class and a concrete class?
+ 	Concrete class can produce Object, but we cannot create Object from abstract class
+ 	Concrete class has concrete methods, but Abstract class has concrete and abstract methods
+  /*
