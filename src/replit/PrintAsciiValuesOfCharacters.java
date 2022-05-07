@@ -56,10 +56,5 @@ public class PrintAsciiValuesOfCharacters {
                 System.out.println("OOPs!!!UnsupportedEncodingException occurs.");
             }
         }
-        //2. way
-        for (char i = 'a'; i <='z' ; i++) {
-            System.out.println("Ascii value of " + i +" = "+(int)i);
-        }
-        System.out.println("---------------------");
     }
 }
