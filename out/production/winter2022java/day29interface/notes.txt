@@ -1,5 +1,5 @@
 /*
-1)Interface looks like a class but it is not a class.
+1)Interface looks like a class, but it is not a class.
 2)An interface can have just abstract methods.
 3) Variables declared in an interface are public, static , and final.
  Marking a variable as  private or protected will trigger a compiler error

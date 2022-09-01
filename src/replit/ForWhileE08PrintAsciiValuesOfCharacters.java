@@ -1,14 +1,13 @@
 package replit;
 
-import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.Formatter;
 
-public class PrintAsciiValuesOfCharacters {
+public class ForWhileE08PrintAsciiValuesOfCharacters {
     public static void main(String[] args) {
         //1.way
         for (char i = 'a'; i <='z' ; i++) {
-            int ascii=(int)i;
-            System.out.println("Ascii value of " + i +" = "+ascii);
+            System.out.println("Ascii value of " + i +" = "+ (int)i);
 
         }
         System.out.println("---------------------");
@@ -32,13 +31,12 @@ public class PrintAsciiValuesOfCharacters {
             //4. way
         String[] str={"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
             for (String i:str) {
-            try {
 
                 // Character is initiated as a string
 
                 // An array of byte type is created
                 // by using getBytes method
-                byte[] bytes = i.getBytes("US-ASCII");
+                byte[] bytes = i.getBytes(StandardCharsets.US_ASCII);
 
             /*This is the ASCII value of the character
             / present at the '0'th index of above string.*/
@@ -48,13 +46,5 @@ public class PrintAsciiValuesOfCharacters {
                 System.out.println("Ascii value of " + i.charAt(0) + " = "
                         + bytes[0]);
             }
-
-            // Catch block to handle exception
-            catch (UnsupportedEncodingException e) {
-
-                // Message printed for exception
-                System.out.println("OOPs!!!UnsupportedEncodingException occurs.");
-            }
-        }
     }
 }

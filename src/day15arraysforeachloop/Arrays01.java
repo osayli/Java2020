@@ -9,6 +9,10 @@ public class Arrays01 {
         sort the elements according to their length
         ==>"Ali","Veli","Maria","Micheal"
          */
+        int numbers[]=new int[4];
+        numbers[0]=12;
+
+
         String srr[]={"Veli","Micheal","Maria","Ali"};
         System.out.println(Arrays.toString(srr));
         Arrays.sort(srr, Comparator.comparingInt(String::length));

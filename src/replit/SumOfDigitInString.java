@@ -13,7 +13,6 @@ output : 8
      Hint :
      Use Character.isDigit()
      Integer.valueOf()
-  ​
      */
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
@@ -21,15 +20,14 @@ output : 8
         String str=scan.nextLine();
         sumOfDigit(str);
 
-
     }
     public static void sumOfDigit(String str){
         int sum=0;
 
         for (int i=0;i<str.length();i++){
-            char ch =str.charAt(i);
+            Character ch =str.charAt(i);
             if(Character.isDigit(ch)){
-                sum=sum+Character.getNumericValue(ch);
+                sum=sum+Integer.valueOf(ch);
             }
         }
         System.out.println(sum);

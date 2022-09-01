@@ -9,7 +9,7 @@ public class TypeCasting01 {
         byte b=47;//44==>byte
         int a=b;  //47==>int
         System.out.println(a);
-        //2) Exlicit Narrowing
+        //2) Explicit Narrowing
         double c=23.2;
         short d=(short)c;
         System.out.println(d);
